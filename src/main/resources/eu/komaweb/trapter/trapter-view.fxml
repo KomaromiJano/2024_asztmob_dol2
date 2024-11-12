@@ -47,5 +47,6 @@
             <TextField fx:id="TextFieldArea" GridPane.columnIndex="1" />
          </children>
       </GridPane>
+      <Label text="Komáromi János" />
    </children>
 </VBox>

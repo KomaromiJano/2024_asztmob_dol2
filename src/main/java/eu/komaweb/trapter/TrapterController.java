@@ -1,12 +1,21 @@
+/*
+ * File: TrapterController.java
+ * Author: Komáromi János
+ * Copyright: 2024, Komáromi János
+ * Group: Szoft II/1/N
+ * Date: 2024-11-12
+ * Github: https://github.com/komacraft12/
+ * Licenc: GNU GPL
+ */
+
 package eu.komaweb.trapter;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
-public class HelloController {
+public class TrapterController {
     @FXML
     private Label LabelTitle, LabelASide, LabelBSide, LabelCSide, LabelDSide, LabelArea;
     public TextField TextFieldASide, TextFieldBSide, TextFieldCSide, TextFieldDSide, TextFieldArea;
@@ -32,7 +41,7 @@ public class HelloController {
 
             System.out.println(area);
 
-            TextFieldArea.setText(String.format("%.2f", area));
+            TextFieldArea.setText(String.format("%.12f", area));
         } catch (NumberFormatException e) {
             TextFieldArea.setText("Helytelen bemenet");
         } catch (ArithmeticException e) {
